@@ -15,7 +15,7 @@ var server = http.createServer(function (req, res){
 		listOnBackOrder(res);
 
 	} else if(req.url === "/sku"){
-		listOnBackOrder(res);
+		listSKU(res);
 
 	} else {
 		res.writeHead(404, {"Content-Type" : "text/plain"});
